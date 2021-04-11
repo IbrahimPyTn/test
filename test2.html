@@ -1,0 +1,22 @@
+‎<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<form >
+	Text:<input type="text" id="t" oninput="reverse()" />Reverse:<input type="text" id="r" />
+</form>
+<script type="text/javascript">
+	function reverse(){
+		var t=document.getElementById('t').value;
+		var r="";
+		for (i=0;i<t.length;i++){
+			r+=t.charAt(t.length-1-i)
+		}
+		document.getElementById('r').value=r
+	}
+
+</script>
+</body>
+</html>

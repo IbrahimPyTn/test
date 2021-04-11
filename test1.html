@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<form>
+		Name:<input type="text"><br/>
+		age:<input type="number"><br/>
+		Taille(m)<input type="number" id="t" ><br/>
+		Poids<input type="number" id="p"><br/>
+		<input type="button" value="Calculer" onclick="do_it()">
+	</form>
+
+<script type="text/javascript">
+function do_it(){
+	var t=document.getElementById("t").value
+	var p=document.getElementById("p").value
+	var imc=p/Math.pow(t,2)
+	if(imc<16.5){
+		alert("go eat!'"+imc+"'")
+
+	}
+	else if(imc>16.5&&imc<35){
+		alert("you are good!'"+imc+"'")
+
+	}
+	else{
+		alert("you are fat!'"+imc+"'")
+	}
+}
+
+</script>
+
+
+</body>
+</html>
